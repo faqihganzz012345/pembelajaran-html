@@ -1,35 +1,47 @@
-<!-- shorcut struktur dasar html5 di vscode -->
+<!-- shortcut struktur dasar html5 di vscode -->
 <!-- ketikan html:5 lalu klik atau tekan tab -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Belajar Attributes</title>
   </head>
   <body>
     <!-- div = mengelompokan banyak tag -->
     <!-- style = menyisipkan syntax css ke tag -->
-    <!-- disebut juga sebagai 'inline-css' -->
-    <div style="background-color: aquamarine; width: 400px; padding: 20px">
-      <h1 style="color: blueviolet">belajar attribut</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea culpa,<b style="font-size: 25px">porro</b>
-        neque sunt, voluptatibus adipisci amet unde iusto est aliquam ab tenetur
-        libero molestias dicta porro, inventore id a velit accusamus.
+    <!-- disebut juga sebagai `inline-css` -->
+    <div style="background-color: aqua; width: 400px; padding: 20px">
+      <!-- value warna di css punya 3 metode: -->
+      <!-- 1. color name (english): aqua -->
+      <!-- 2. hex (heksadesimal): #8c03ccee -->
+      <!-- 3. rgb (red, green, blue): rgb(214, 28, 28) -->
+      <h1 style="color: indigo">Belajar Attribute</h1>
+      <!-- `lorem` = teks random tanpa makna -->
+      <p style="font-size: 20px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <b style="font-size: 25px">Porro</b> dolores animi quae maxime error
+        pariatur quisquam similique!
+        <u style="color: #fff; background-color: black">Veritatis</u>,
+        voluptatum ipsa molestiae voluptatibus, eligendi nobis fugit, quas
+        voluptatem porro necessitatibus magnam.
       </p>
     </div>
-    <br. />
-    <div style="background-color: brown; width: 200px; padding: 20px; margin:30px;">
-      <h1 style="color: blue">kotak baru</h1>
-      <p>ini div bawah</p>
-      <!-- attribute-->
-      <a href="https://google.com"_blank">klik ke</a>  
+    <br />
+    <!-- padding: jarak elemen dari dalam -->
+    <!-- margin: jarak elemen dari luar -->
+    <div
+      style="
+        background-color: tomato;
+        width: 200px;
+        padding: 20px;
+        margin: 30px;
+      "
+    >
+      <h1 style="color: maroon; text-align: center">Kotak Baru</h1>
+      <p>Ini div bawah</p>
+      <!-- attribute target="_blank" untuk membuka link ke tab baru -->
+      <a href="https://google.com" target="_blank">Klik Google ke Tab Baru</a>
     </div>
-    <!-- value warna di css punya 3 metode: -->
-    <!-- 1, color name (english): aqua -->
-    <!-- 2, hex (heksadesimal): #8c03ccee -->
-    <!-- 3, rgb (red, green, blue): rbg(214, 28, 28) -->
-    <!-- disebut juga sebagai -->
   </body>
 </html>
