@@ -1,0 +1,80 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:rgb(42, 73, 73);
+  color: #6f6e6e;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+header {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+
+.Screenshot {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;     /* isi area tanpa distorsi */
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  color:cornflowerblue;
+  margin: 0;
+}
+.section-title {
+  padding-left: 20px;      /* ruang agar teks tidak mepet garis */
+  border-left: 5px solid #22c55e; /* garis aksen di kiri */
+}
+
+header p {
+  color: #505051;
+  font-size: 16px;
+}
+
+.box {
+  margin-right: 3cm;
+  margin-left: 3cm;
+  background-color: #c2c6c6;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+
+
+.avatar {
+  width: 200px;          /* atau 250px sesuai kebutuhan */
+  height: 200px;         /* samakan dengan width untuk bulat sempurna */
+  object-fit: cover;     /* isi area tanpa distorsi */
+  border-radius: 100%;
+  border: 3px solid #e5e7eb;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f6f9fc;
+  font-weight: bold;
+}

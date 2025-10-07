@@ -1,0 +1,183 @@
+/* Reset sederhana */
+body {
+  background-color: rgb(52, 49, 49);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+header,
+.header {
+  color: rgb(48, 46, 46);
+  padding: 15px;
+  text-align: center;
+}
+
+.Screenshot {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* isi area tanpa distorsi */
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  color: dodgerblue;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  color: rgb(38, 94, 94);
+  margin: 10;
+}
+.section-title {
+  padding-left: 20px; /* ruang agar teks tidak mepet garis */
+  border-left: 5px solid #22c55e; /* garis aksen di kiri */
+}
+
+header p {
+  color: #505051;
+  font-size: 16px;
+}
+
+.box {
+  margin-top: 105px;
+  margin-right: 4cm;
+  margin-left: 4cm;
+  background-color: #d6d9d9;
+  border-radius: 10px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  padding-left: 30px;
+  border: left 4px solid #124575;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.avatar {
+  width: 200px; /* atau 250px sesuai kebutuhan */
+  height: 200px; /* samakan dengan width untuk bulat sempurna */
+  object-fit: cover; /* isi area tanpa distorsi */
+  border-radius: 100%;
+  border: 3px solid #e5e7eb;
+}
+nav,
+.nav {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.nav a {
+  color: #17171c;
+  text-decoration: none;
+  border-radius: 22px;
+  background: #f8f2f2;
+  padding: 6px 14px;
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+  /* padding_left: 14px; */
+  /* padding-right: 14px; */
+  margin-right: 8px; /* jarak luar antar link */
+  background-color: rgb(85, 95, 95);
+  transition: all ease-in-out 0.2s;
+}
+.nav a.active {
+  background-color: rgb(43, 43, 103);
+  color: white;
+}
+
+.nav a:hover {
+  background-color: rgb(1, 1, 1);
+  color: white;
+}
+
+/* Section / Artikel utama */
+section,
+.section {
+  flex: 2;
+  background: #124575;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery h2 {
+  color: indigo;
+  font-size: 34px;
+}
+
+.gallery .card {
+  gap: 10px; /* Jarak antar gambar */
+  margin: auto;
+  border: 4px to red;
+  border-radius: 8px;
+  display: flex;
+}
+
+.gallery .card .image-box {
+  width: 1000px;
+  height: 200px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery .card figcaption {
+  width: 150px;
+  margin: px;
+  vertical-align: top;
+  background-color: indigo;
+  color: white;
+  padding: 8px;
+  margin-top: 7px;
+}
+
+#table-basic {
+  width: 100%;
+  border-collapse: collapse;
+}
+#table-basic {
+  padding-left: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#table-basic td {
+  padding: 6px;
+  font-family: Arial;
+}
+#table-basic .bg-header {
+  padding-right: 100px;
+  background-color: aqua;
+  color: rgb(233, 239, 239);
+  font-weight: bold;
+  text-align: center;
+}
