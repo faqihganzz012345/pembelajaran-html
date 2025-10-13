@@ -1,0 +1,92 @@
+@font-face {
+    font-family:font Digital;
+    src: url();
+}
+
+.container p {
+    color: aqua;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-kiri {
+    text-align: left;
+}
+
+.text-kanan {
+    text-align: right;
+}
+
+.text-rata {
+    text-align: justify;
+}
+
+.menyala {
+    font-size: 40px;
+    font-weight:bold;
+    color: brown;
+}
+.gelap {
+    color: black;
+    /* ketebalan font */
+    font-weight: bold;
+}
+
+.button-save {
+    text-decoration: none;
+    background: darkblue;
+    color: white;
+    padding: 6px 10px;
+}
+
+.coret {
+    text-decoration: line-through;
+}
+
+.container p {
+    color:rgb(53, 56, 54);
+}
+
+.text-rendah {
+    line-height: 0,5;
+    background-color: yellow;
+    padding: 4px;
+}
+
+.text-tinggi {
+    line-height: 1,5;
+    background-color: greenyellow;
+    padding: 4px;
+}
+
+.text-rapat {
+    letter-spacing: 4;
+    background-color: orange;
+    padding: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.text-longgar {
+    letter-spacing: 5px;
+    background-color: aqua;
+    padding: 4px;
+    font-family: fantasy;
+}
+
+.text-padat {
+    word-spacing: 4px;
+    background-color: blueviolet;
+    padding:4px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-selaw {
+    word-spacing: 6px;
+    background-color: tomato;
+    padding: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+

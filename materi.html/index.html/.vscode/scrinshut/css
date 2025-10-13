@@ -1,0 +1,125 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container utama */
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Judul */
+.container h1 {
+  text-align: center;
+  color: #1a1a7a;
+  margin-bottom: 5px;
+}
+
+.container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Navigasi */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nav-buttons button {
+  flex: 1;
+  padding: 10px;
+  background-color: #eee;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-buttons .active,
+.nav-buttons button:hover {
+  background-color: #3370ff;
+  color: white;
+}
+
+/* Formulir */
+.feedback-form h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.feedback-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="number"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+/* Tombol */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.submit-btn {
+  background-color: #0055ff;
+  color: white;
+}
+
+.button-group button[type="reset"] {
+  background-color: #ccc;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="box-judul">
+    <h1 class="judul"><i>Feedback</i></h1>
+    <h5 class="text_info">Kritik, Saran, dan Masukan</h5>
+  </div>
+
+  <!-- Navigasi -->
+  <div class="nav">
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="feedback.html" class="active">Feedback</a>
+  </div>
+  <hr>
+
+  <!-- Box Utama -->
+  <div class="box">
+    <h2 class="section-title">Formulir Kontak & Saran</h2>
+    <p>
+      Silahkan isi kolom yang tersedia untuk memberi masukan.
+      Semua input bersifat wajib kecuali nama.
+    </p>
+
+    <main class="container">
+  <form action="https://httpbin.org/post" method="POST" class="form-box">
+
+    <div class="form-group">
+      <label for="inputName">Nama Anda (Opsional):</label><br>
+      <input type="text" name="nama" id="inputName" placeholder="Tulis nama Anda">
+    </div>
+
+    <div class="form-group">
+      <label for="inputEmail">Email Anda:</label><br>
+      <input type="email" name="email" id="inputEmail" placeholder="nama@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="inputRating">Rating Kepuasan Website (Skala 1–10):</label><br>
+      <input type="number" name="rating" id="inputRating" min="1" max="10" required>
+    </div>
+
+    <div class="form-group">
+      <p>Rekomendasi Website Ini?</p>
+      <input type="radio" name="rekomendasi" value="ya" id="rekomYes"> <label for="rekomYes">Ya, Sangat</label>
+      <input type="radio" name="rekomendasi" value="mungkin" id="rekomMaybe"> <label for="rekomMaybe">Mungkin</label>
+      <input type="radio" name="rekomendasi" value="tidak" id="rekomNo"> <label for="rekomNo">Tidak</label>
+    </div>
+
+    <div class="form-group">
+      <p>Topik yang paling menarik:</p>
+      <input type="checkbox" name="topik" value="beranda" id="topicBeranda"> <label for="topicBeranda">Beranda</label>
+      <input type="checkbox" name="topik" value="biodata" id="topicBio"> <label for="topicBio">Biodata</label>
+      <input type="checkbox" name="topik" value="jadwal" id="topicJadwal"> <label for="topicJadwal">Jadwal</label>
+      <input type="checkbox" name="topik" value="galeri" id="topicGaleri"> <label for="topicGaleri">Galeri</label>
+    </div>
+
+    <div class="form-group">
+      <label for="inputBidang">Saran Pengembangan di Bidang:</label><br>
+      <select name="bidang" id="inputBidang" required>
+        <option value="">-- Pilih Bidang --</option>
+        <option value="desain">Desain</option>
+        <option value="fitur">Fitur Tambahan</option>
+        <option value="navigasi">Navigasi</option>
+        <option value="tampilan">Tampilan</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="inputPesan">Pesan/Saran Lengkap:</label><br>
+      <textarea name="pesan" id="inputPesan" rows="5" required></textarea>
+    </div>
+
+    <div class="grid">
+      <button type="reset">Atur Ulang</button>
+      <button type="submit">Kirim Feedback</button>
+    </div>
+
+  </form>
+</main>
+
+
+    <!-- Form -->
+    
+  </div>
+
+</body>
+</html>

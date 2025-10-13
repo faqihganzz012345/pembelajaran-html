@@ -1,9 +1,116 @@
 /* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(52, 49, 49);
   margin: 0;
-  font-family: Arial, sans-serif;
+   background-color: #333;
+   color: #ffffff;
+  font-family:Arial, Helvetica, sans-serif;
   line-height: 1.6;
+}
+
+
+
+/* Judul */
+.container h1 {
+  text-align: center;
+  color: #1a1a7a;
+  margin-bottom: 10px;
+  margin-top: 5;
+}
+
+.container p {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+
+
+
+.feedback-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="number"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.feedback-form textarea {
+  resize:horizontal;
+  min-height: 80px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: block;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.feedback-form {
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  display:block;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+
+
+.feedback-text {
+  height: 100px;
+  resize: vertical;
+}
+
+
+/* Tombol */
+.button-group {
+  display: block inline;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button{
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.button-group button{
+  background-color: #0055ff;
+  color: white;
+}
+
+.button-group button[type="reset"] {
+  background-color: #ccc;
 }
 
 
@@ -43,18 +150,13 @@ h3 {
   border-left: 5px solid #22c55e; /* garis aksen di kiri */
 }
 
-header p {
-  color: #505051;
-  font-size: 16px;
-}
-
 .box {
-  margin-top: 105px;
+  margin-top: 5px;
   margin-right: 4cm;
   margin-left: 4cm;
-  background-color: #d6d9d9;
+  background-color: #053434;
   border-radius: 10px;
-  padding: 50px;
+  padding: 30px;
   margin-bottom: 50px;
 }
 
@@ -129,55 +231,64 @@ section,
 }
 
 .gallery .card {
-  gap: 10px; /* Jarak antar gambar */
+  gap: 15px; /* Jarak antar gambar */
   margin: auto;
   border: 4px to red;
   border-radius: 8px;
   display: flex;
-}
-
-.gallery .card .image-box {
-  width: 1000px;
-  height: 200px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
 }
 
 .gallery .card img {
   width: 100%;
-  height: 180px;
+  height: 280px;
   object-fit: cover;
 }
 
 .gallery .card figcaption {
   width: 150px;
-  margin: px;
+  margin: 20px;
   vertical-align: top;
   background-color: indigo;
   color: white;
   padding: 8px;
-  margin-top: 7px;
+  margin-top: 0px;
 }
+
+
+
+.gallery-container {
+  margin-left: 80px; /* geser ke kanan */
+  /* atau */
+  /* transform: translateX(50px); */
+}
+
+
+
+
+.label {
+  background-color: #4B0082; /* ungu */
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
 
 #table-basic {
   width: 100%;
   border-collapse: collapse;
 }
-#table-basic {
-  padding-left: 15px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+
 #table-basic td {
   padding: 6px;
-  font-family: Arial;
+  font-family:'Times New Roman', Times, serif;
 }
 #table-basic .bg-header {
   padding-right: 100px;
-  background-color: aqua;
-  color: rgb(233, 239, 239);
+  background-color:darkgreen;
+  color: rgb(237, 228, 228);
   font-weight: bold;
   text-align: center;
 }
+
