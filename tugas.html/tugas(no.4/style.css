@@ -1,0 +1,72 @@
+
+
+@font-face {
+    font-family: "bismillah script";
+    src: url(fonts/Bismillah\ Script.ttf);
+}
+
+.header {
+    text-align: center;
+    background:rgb(171, 199, 231);
+    margin: 50px;
+    padding:3px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+body {
+    background:repeating-linear-gradient(270deg,gray, white );
+}
+h2{
+    color:rgb(0, 102, 255);
+    font-size:xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 25px;
+}
+
+p{
+    color:gray;
+    font-size:large;
+    margin-top: auto;
+}
+
+.main {
+    background: rgb(237, 248, 248);
+    margin: 50px;
+    padding: 1cm;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    color: darkgreen;
+    font-size:x-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-title {
+    padding-left: 25px;
+    border-left: 5px solid #22c55e;
+    background:ghostwhite;
+    margin: 50px;
+    color: brown;
+    padding: 1cm;
+    border-radius: 5px;
+}
+
+footer {
+    background: gold;
+    margin: 2cm;
+    padding-left: 25px;
+    border-left: 5px solid #22c55e;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.signature {
+  font-family: 'BismillahScript', cursive;
+  font-size: 22px;
+  color: #b91c1c;
+  text-align: right;
+}
