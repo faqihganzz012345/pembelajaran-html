@@ -1,0 +1,36 @@
+header {
+    background: #1cb249d6;
+     text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background: #88f8be;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    gap: 13px;
+}
+
+nav li a {
+    color: #fff;
+    background: #bfe049;
+}
+/* media query = atur css di ukuran layar tertentu */
+/* 1024px => dexktop/laptop ++ */
+@media screen and (min-width: 1024px) {
+    header {
+        background-color: silver;
+    }
+}
+/* 769-1023px => tablet */
+@media screen and (min-width: 798px) and (max-width: 1024px) {
+    header {
+        background-color: turquoise;
+    }
+}

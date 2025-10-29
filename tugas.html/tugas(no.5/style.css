@@ -1,0 +1,85 @@
+.box {
+  margin-top: 5px;
+  margin-right: 2cm;
+  margin-left: 2cm;
+  background-color:aquamarine;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+h1 {
+  margin-left: 2cm;
+}
+.alert {
+  position: relative;
+  background: #bedef8;
+  background-color: #e8f3ff;
+  border: 1px solid #b8daff;
+  color: #004085;
+  border-radius: 5px;
+  display:flex;
+  align-items: center;
+  
+}
+
+.alert button { 
+
+  position:absolute;
+  top: 15px;
+  right: 15px;
+  background: #e0f2fe; border: 1px solid #31ade3;
+  border-radius: 5px;
+}
+
+.card {
+   background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 220px;
+  width: 210px;
+  border: 2px /* dashed */ solid #eaeaea;
+  border-radius: 6px;
+}
+.photo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.badge {
+  position: absolute;
+  color: #fdfdfd;
+  text-decoration: none;
+  border-radius: 22px;
+  background: #f8f2f2;
+  padding: 6px 14px;
+  margin-right: 8px; 
+  background-color: rgb(94, 220, 220);
+  transition: all ease-in-out 0.2s;
+  left: 130px;
+
+}
+
+.flex-area {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+.price {
+  color: #004085;
+  font-size: xx-large;
+}
+
+button {
+  background-color:aqua;
+  color:darkslateblue;
+  border-radius: 5px;
+  border: none;
+  font-size: medium;
+}
