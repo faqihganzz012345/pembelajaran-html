@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webprofil-5.jpeg</title>
+          <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+      <h1>Formulir Umpan Balik</h1>
+      <p>Kritik,Saran,dan Masukan</p>
+
+      <div class="nav">
+        <ul>
+    <a href="index.html" >Beranda</a>
+    <a href="biodata.html">biodata</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="galeri.html" >Galeri</a>
+    <a href="feedback.html" class="active">Feedback</a>
+    
+    </div>
+      </div>
+
+      <br />
+      <form action="https://httpbin.org/post">
+        <section class="box">
+        <h3 class="section-title">Formulir kontak & Saran</h3>
+        <p>Berikan masukan terbaik anda untuk pengembangan website profil ini. semua iniput bersifat wajib kecuali nama.</p>
+        <div class="feedback-form">
+          <label>Nama Anda (opsimal):</label>
+          <input type="text" placeholder="Tulis nama Anda" />
+        </div>
+        <div class="feedback-form">
+          <label for="inputEmail">Email</label>
+          <input type="email" name="email" id="inputEmail" />
+        </div>
+        <div class="feedback-form">
+          <label for="inputage">Rating Keputusan Website (Skala 1-10)</label>
+          <input type="number" name="rating" id="inputRating" />
+        </div>
+        <div class="feedback-form">
+            <p>Rekomendasi Website ini?</p>
+           <input type="radio" name="rekomendasi" id="inputRating" />
+          <label for="inputRating">Ya, Sangat</label>
+          <input type="radio" name="rekomendasi" id="inputRating" />
+          <label for="inputRating">Mungkin Saja</label>
+          <input type="radio" name="rekomendasi" id="inputRating" />
+          <label for="inputRating">Tidak</label>
+          <br /><br />
+        </div>
+        <div class="feedback-form">
+            <p>Topik yang paling menarik</p>
+          <input type="checkbox" name="topik" id="inputBiodata" />
+          <label for="inputBiodata">Biodata</label>
+          <input type="checkbox" name="topik" id="inputJadwal" />
+          <label for="inputJadwal">Jadwal</label>
+          <input type="checkbox" name="topik" id="inputGaleri" />
+          <label for="inputGaleri">Galeri</label>  
+          <br /><br />
+        </div>
+        <div class="feedback-form">
+          <label for="inputSaran">Saran Pengembangan di Bidang:</label>
+          <!-- tips shortcut: select>option*4 -->
+          <select name="bidang-pengembangan" id="inputBidang">
+              <option value="-- Pilih Bidang --">-- Pilih Bidang --</option>
+            <option value="Dekorasi">Dekorasi</option>
+            <option value="Gaya bahasa">Gaya bahasa</option>
+            <option value="Pengembagan Website">Pengembagan Website</option>
+          </select>
+        </div>
+        <div class="feedback-form">
+          <label for="inputSaran">Pesan/Saran Lengkap:</label>
+          <textarea name="saran" id="inputSaran"></textarea>
+        </div>
+        <div class="button-group">
+          <button type="reset">Atur Ulang</button>
+          <button type="submit">Kirim Feedback</button>
+        </div>
+        </section>
+      </form>
+</body>
+</html>

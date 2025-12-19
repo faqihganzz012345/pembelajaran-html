@@ -1,0 +1,585 @@
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#1f2937;
+  background:repeating-linear-gradient(270deg,azure, gold ); 
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    background-color: #eef;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    background-color: #dde;
+  }
+}
+
+:root {
+  --bg: #f7f9fb;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --brand: #2141ab;
+  --brand-link: #ffffff;
+  --box: #ffffff;
+  --border: #e5e7eb;
+  --accent: #ad8b41;
+}
+
+.feedback-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="number"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.feedback-form textarea {
+  resize:horizontal;
+  min-height: 80px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: block;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.feedback-form {
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  display:block;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+
+
+.feedback-text {
+  height: 100px;
+  resize: vertical;
+}
+
+
+/* Tombol */
+.button-group {
+  display: block inline;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button{
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.button-group button{
+  background-color: #0055ff;
+  color: white;
+}
+
+.button-group button[type="reset"] {
+  background-color: #ccc;
+}
+
+header,
+.header {
+  color: rgb(48, 46, 46);
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+
+.Screenshot {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* isi area tanpa distorsi */
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  color: dodgerblue;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  color:gold;
+  margin: 10;
+  text-align: center;
+}
+.section-title {
+  padding-left: 20px; /* ruang agar teks tidak mepet garis */
+  border-left: 5px solid #22c55e; /* garis aksen di kiri */
+}
+
+.box {
+ margin-top: 5px;
+  margin-right: 4cm;
+  margin-left: 4cm;
+  background:azure;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  padding-left: 30px;
+  border: left 4px solid #124575;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.avatar {
+  width: 200px; /* atau 250px sesuai kebutuhan */
+  height: 200px; /* samakan dengan width untuk bulat sempurna */
+  object-fit: cover; /* isi area tanpa distorsi */
+  border-radius: 100%;
+  border: 3px solid #e5e7eb;
+}
+
+.container {
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.main-nav {
+ text-align: center;
+ margin-bottom: 50px;
+ margin-top: 50px; 
+ border-top: 3px solid grey;
+ border-bottom: 3px solid grey;
+ padding: 15px;
+ 
+ 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+
+
+.video {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: o;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  display: block;
+  padding: 8px 15px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+} 
+
+a:-webkit-any-link {
+  color: -webkit-link;
+
+}
+
+.main-nav a.active {
+  background-color: rgb(43, 43, 103);
+  color: white;
+}
+
+.main-nav a:hover {
+  background-color: rgb(1, 1, 1);
+  color: white;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery h2 {
+  color: indigo;
+  font-size: 34px;
+}
+
+.gallery .card {
+  gap: 15px; /* Jarak antar gambar */
+  margin: auto;
+  border: 4px to red;
+  border-radius: 8px;
+  display: flex;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery .card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.gallery .card figcaption {
+  width: 150px;
+  margin: 20px;
+  vertical-align: top;
+  background-color: indigo;
+  color: white;
+  padding: 8px;
+  margin-top: 0px;
+}
+
+
+
+.gallery-container {
+  margin-left: 80px; /* geser ke kanan */
+  /* atau */
+  /* transform: translateX(50px); */
+}
+
+
+
+
+.label {
+  background-color: #4B0082; /* ungu */
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+
+#table-basic {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#table-basic td {
+  padding: 6px;
+  font-family:'Times New Roman', Times, serif;
+}
+#table-basic .bg-header {
+  padding-right: 100px;
+  background:cornflowerblue;
+  color: rgb(237, 228, 228);
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/*  */
+🧠 1. Apa Itu Website Responsif?
+Website responsif artinya tampilannya otomatis menyesuaikan ukuran layar — entah dibuka lewat:
+
+
+HP (mobile)
+
+
+Tablet
+
+
+Laptop / PC (desktop)
+
+
+Bukan bikin 3 website, tapi satu website yang bisa berubah layout-nya sesuai lebar layar.
+Itu dilakukan dengan CSS media query dan layout fleksibel (Flexbox / Grid).
+
+📏 2. Konsep Dasar: “Mobile-First”
+Kamu mulai desain dari layar kecil dulu (HP), baru menambahkan aturan khusus untuk tablet dan desktop.
+Contoh umum breakpoint-nya:
+/* Style dasar = mobile */
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    background-color: #eef;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    background-color: #dde;
+  }
+}
+
+
+Saat layar melebar, CSS di dalam @media mengganti style-nya.
+
+
+🧩 3. Elemen yang Harus Responsif di Tugas Kamu
+✅ A. Navigasi (Flexbox)
+
+
+Mobile: menu bisa 1 kolom atau 2 item per baris.
+
+
+Tablet & Desktop: menu sejajar (horizontal).
+
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="biodata.html">Biodata</a>
+  <a href="galeri.html">Galeri</a>
+  <a href="jadwal.html">Jadwal</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* agar bisa turun ke bawah kalau sempit */
+  justify-content: center;
+  background-color: #0044cc;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #003399;
+}
+
+/* Tablet & Desktop: menu sejajar dan lebih rapat */
+@media (min-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+
+
+✅ B. Galeri (Flexbox Grid)
+<section class="galeri">
+  <img src="images/foto1.jpg" alt="Foto 1">
+  <img src="images/foto2.jpg" alt="Foto 2">
+  <img src="images/foto3.jpg" alt="Foto 3">
+  <img src="images/foto4.jpg" alt="Foto 4">
+</section>
+
+.galeri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.galeri img {
+  width: 100%; /* default mobile = 1 kolom */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Tablet: 2 kolom */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .galeri img {
+    width: calc(50% - 10px);
+  }
+}
+
+/* Desktop: 3–4 kolom */
+@media (min-width: 1024px) {
+  .galeri img {
+    width: calc(25% - 10px);
+  }
+}
+
+
+✅ C. Biodata (Foto & Teks)
+<section class="biodata">
+  <img src="images/foto-diri.jpg" alt="Foto Diri">
+  <div class="teks">
+    <h2>Nama: Ahmad</h2>
+    <p>Asal: Yogyakarta</p>
+    <p>Hobi: Membaca dan Coding</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+/* Tablet & Desktop: foto kiri, teks kanan */
+@media (min-width: 600px) {
+  .biodata {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .biodata img {
+    width: 40%;
+    margin-right: 20px;
+  }
+  .biodata .teks {
+    width: 50%;
+  }
+}
+
+
+✅ D. Tabel (Jadwal)
+<div class="table-container">
+  <table>
+    <thead>
+      <tr><th>Hari</th><th>Mata Pelajaran</th></tr>
+    </thead>
+    <tbody>
+      <tr><td rowspan="2">Senin</td><td>Matematika</td></tr>
+      <tr><td>Bahasa Arab</td></tr>
+    </tbody>
+  </table>
+</div>
+
+.table-container {
+  overflow-x: auto; /* biar bisa di-scroll di HP */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 8px;
+}
+
+
+✅ E. Form (Feedback)
+<form class="feedback">
+  <label>Nama:</label>
+  <input type="text" required>
+
+  <label>Email:</label>
+  <input type="email" required>
+
+  <label>Pesan:</label>
+  <textarea rows="4" required></textarea>
+
+  <button type="submit">Kirim</button>
+</form>
+
+.feedback {
+  display: flex;
+  flex-direction: column; /* Mobile = 1 kolom */
+  gap: 10px;
+}
+
+/* Tablet–Desktop: 2 kolom */
+@media (min-width: 600px) {
+  .feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  textarea {
+    grid-column: span 2; /* textarea lebar penuh */
+  }
+  button {
+    grid-column: span 2;
+  }
+}
+
+
+🌍 4. Contoh Website Responsif Sederhana (Lengkap)
+Kamu bisa salin ini ke folder /website-profil-v2/index.html
+dan buat file style.css sesuai di atas.
+🔗 Live Example:
+Kamu bisa lihat contoh nyata di W3Schools:
+👉 https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+Itu contoh galeri responsif yang pakai Flexbox.
+
+Kalau kamu mau, aku bisa bantu:
+
+
+💻 Buatkan struktur lengkap project kamu (semua 5 halaman + CSS)
+
+
+🔧 Atau bantu debug tampilan yang belum responsif
+
+
+Mau saya bantu buatkan template utuh-nya (index.html, style.css, dll) sesuai panduan tugas di atas?

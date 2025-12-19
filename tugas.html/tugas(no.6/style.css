@@ -1,0 +1,419 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Container responsif */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Judul */
+.container h1 {
+  text-align: center;
+  color: #1a1a7a;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+.container p {
+  text-align: center;
+  color: hsl(0, 0%, 1%);
+  margin-bottom: 30px;
+}
+
+/* Navigasi responsif */
+.nav {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  color: #17171c;
+  text-decoration: none;
+  border-radius: 22px;
+  background: #f8f2f2;
+  padding: 6px 14px;
+  margin: 5px;
+  background-color: rgb(168, 241, 241);
+  transition: all ease-in-out 0.2s;
+}
+
+.nav a.active {
+  background-color: rgb(43, 43, 103);
+  color: white;
+}
+
+.nav a:hover {
+  background-color: rgb(255, 244, 128);
+  color: white;
+}
+
+/* Box responsif */
+.box {
+  margin-top: 5px;
+  margin-right: 4cm;
+  margin-left: 4cm;
+  background-color: #09a0a0;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+/* Gallery responsif */
+.gallery {
+  text-align: center;
+}
+
+.gallery h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.gallery .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-box {
+  flex: 1 1 200px;
+  max-width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+.image-box figcaption {
+  background-color: indigo;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Video responsif */
+.video-container {
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500%;
+  border: none;
+}
+
+/* Form responsif */
+.feedback-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="number"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: block;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.feedback-form {
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  display: block;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.feedback-text {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Tombol responsif */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  min-width: 100px;
+}
+
+.button-group button {
+  background-color: #0055ff;
+  color: white;
+}
+
+.button-group button[type="reset"] {
+  background-color: #ccc;
+}
+
+/* Header responsif */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Screenshot {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* GANTI margin-left dengan ini untuk memusatkan */
+  margin: 20px auto; /* 20px jarak atas/bawah, auto untuk kiri/kanan */
+  
+  width: 200px;
+}
+
+/* Tambahkan media query untuk responsivitas */
+@media screen and (max-width: 768px) {
+  header .logo {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .logo {
+    width: 120px;
+    max-width: 80%; /* Pastikan logo tidak terlalu besar di layar kecil */
+  }
+}
+
+
+
+h1 {
+  font-size: 24px;
+  color: dodgerblue;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+.section-title {
+  padding-left: 20px;
+  border-left: 5px solid #22c55e;
+}
+
+.section-title {
+  padding-left: 30px;
+  border-left: 4px solid #124575;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid #e5e7eb;
+}
+
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Section / Artikel utama */
+section,
+.section {
+  flex: 2;
+  background: #124575;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.label {
+  background-color: #4B0082;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#table-basic {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#table-basic td {
+  padding: 6px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#table-basic .bg-header {
+  padding-right: 100px;
+  background-color: darkgreen;
+  color: rgb(237, 228, 228);
+  font-weight: bold;
+  text-align: center;
+}
+
+.box h3 {
+  text-align: center;
+}
+
+/* Media Queries untuk Responsivitas */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .box {
+    margin-right: 2cm;
+    margin-left: 2cm;
+    padding: 20px;
+  }
+  
+  .image-box {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+  
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav a {
+    margin: 3px 0;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .button-group button {
+    margin: 5px 0;
+  }
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  
+  .box {
+    margin-right: 1cm;
+    margin-left: 1cm;
+    padding: 15px;
+  }
+  
+  .image-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  .gallery .card {
+    gap: 10px;
+  }
+  
+  .nav a {
+    width: 100%;
+    padding: 8px 10px;
+  }
+  
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form input[type="number"],
+  .feedback-form select,
+  .feedback-form textarea {
+    padding: 8px;
+  }
+  
+  .button-group button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+

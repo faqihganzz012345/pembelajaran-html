@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!--  load bootstrap demo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- .container = buat div pke class otomatis -->
+    <!-- color theme: primery -->
+    <div class="container bg-light">
+      <h1>Hello, World</h1>
+      <div class="alert alert-warning" role="alert">
+        <!-- set warna teks, warna border dan padding -->
+        <strong class="text-danger border border-danger p-1">Atensi!</strong>
+        Terjadi kebakaran di depan olive chicken.
+      </div>
+      <button type="button" class="btn btn-danger">Bahaya</button>
+      <button type="button" class="btn btn-outline-success">
+        Selamatkan diri anda
+      </button>
+
+      <hr />
+      <!-- sample row column -->
+      <div class="row">
+        <div class="col-4 bg-success">BOX KIRI</div>
+        <div class="col-4 bg-info">BOX TENGAH</div>
+        <div class="col-4 bg-danger">BOX KANAN</div>
+      </div>
+      <!-- end row -->
+      <!-- responsive gallery -->
+      <!-- .row>.col-3*4>img : 4 kolom img -->
+      <!-- tipa multi select: ctrl + d -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://i.pinimg.com/736x/2e/8e/c2/2e8ec217fa06453ca823115319e41f41.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://i.pinimg.com/736x/b7/eb/ee/b7ebeee589f80ab76f2b101ebfbcef0e.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://i.pinimg.com/736x/73/bb/b5/73bbb5792c7309370d0366d1ca794863.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://i.pinimg.com/736x/4a/69/22/4a69221592d0003f9e9557c660f3cd8a.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 col-sm-12 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://i.pinimg.com/736x/76/15/8a/76158a788b093bdab74af5caa4bcc69e.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 col-sm-12 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://i.pinimg.com/736x/13/d7/4e/13d74e0ec4c8a28d5326060849d4e4fe.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+     <div class="container-fluid bg-primary"> 
+        <h1>Halo, Dunia</h1>
+        <p>Info penerimaaan psb HSI Booarding School 2025.</p>
+     </div>  -->
+    <!-- load bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+https://getbootstrap.com/docs/5.3/components/navbar/

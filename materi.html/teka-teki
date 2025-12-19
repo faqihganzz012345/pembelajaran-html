@@ -1,0 +1,552 @@
+🧭 LANGKAH-LANGKAH MENGERJAKAN
+1. Buat Struktur Folder
+
+Buat folder sesuai instruksi:
+
+/website-profil-v2/
+  ├─ index.html
+  ├─ biodata.html
+  ├─ galeri.html
+  ├─ jadwal.html
+  ├─ feedback.html
+  ├─ style.css
+  └─ images/
+      ├─ foto-diri.jpg
+      └─ logo-hsi.webp
+
+2. Siapkan File style.css (satu untuk semua halaman)
+
+Agar konsisten, hubungkan file CSS di semua halaman:
+
+<link rel="stylesheet" href="style.css">
+
+3. Gunakan Flexbox untuk navigasi dan galeri
+
+Navigasi = baris menu fleksibel (wrap di mobile)
+
+Galeri = gambar dalam grid fleksibel (1 kolom di mobile, 2 di tablet, 3–4 di desktop)
+
+4. Gunakan Media Queries untuk responsivitas
+/* Mobile-first (default styles) */
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {}
+
+/* Desktop */
+@media (min-width: 1024px) {}
+
+💡 CONTOH WEBSITE (versi sederhana tapi lengkap)
+
+Berikut contoh dasar dari seluruh struktur (cukup ubah konten untuk halaman lain).
+
+🏠 index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Santri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="images/logo-hsi.webp" alt="Logo HSI" class="logo">
+    <h1>Website Profil Santri</h1>
+    <nav class="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Selamat Datang!</h2>
+      <p>Ini adalah portal profil santri HSI yang menampilkan biodata, galeri, jadwal kegiatan, dan form feedback.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Santri HSI. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+👤 biodata.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Santri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="biodata.html" class="active">Biodata</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main class="biodata-container">
+    <img src="images/foto-diri.jpg" alt="Foto Santri" class="foto-profil">
+    <div class="bio-info">
+      <h2>Biodata Diri</h2>
+      <p><strong>Nama:</strong> Ahmad Fauzi</p>
+      <p><strong>Asal:</strong> Bandung</p>
+      <p><strong>Program:</strong> Tahsin & Tahfizh</p>
+      <p><strong>Hobi:</strong> Membaca dan olahraga</p>
+    </div>
+  </main>
+
+</body>
+</html>
+
+🖼️ galeri.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="galeri.html" class="active">Galeri</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
+  <main class="galeri">
+    <div class="card"><img src="images/foto-diri.jpg" alt="Foto 1"><p>Kegiatan Santri</p></div>
+    <div class="card"><img src="images/foto-diri.jpg" alt="Foto 2"><p>Belajar Bersama</p></div>
+    <div class="card"><img src="images/foto-diri.jpg" alt="Foto 3"><p>Kegiatan Lain</p></div>
+  </main>
+</body>
+</html>
+
+📅 jadwal.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="jadwal.html" class="active">Jadwal</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr><th rowspan="2">Hari</th><th colspan="2">Kegiatan</th></tr>
+        <tr><th>Pagi</th><th>Sore</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Senin</td><td>Tahsin</td><td>Tafsir</td></tr>
+        <tr><td>Selasa</td><td>Fiqih</td><td>Hafalan</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+
+✉️ feedback.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="feedback.html" class="active">Feedback</a>
+  </nav>
+
+  <form class="feedback-form" action="#" method="post">
+    <h2>Kirim Feedback</h2>
+    <label>Nama:</label>
+    <input type="text" name="nama" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Pesan:</label>
+    <textarea name="pesan" rows="5" required></textarea>
+
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+</html>
+
+🎨 style.css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Navigasi Flexbox --- */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #004d40;
+}
+.navbar a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.navbar a:hover, .navbar .active {
+  background: #00695c;
+  border-radius: 5px;
+}
+
+/* --- Biodata --- */
+.biodata-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.foto-profil {
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.bio-info {
+  border-left: 4px solid #00695c;
+  padding-left: 15px;
+  margin-top: 15px;
+}
+
+/* --- Galeri Flexbox --- */
+.galeri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.card {
+  flex: 1 1 100%;
+  background: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* --- Tabel --- */
+.table-container {
+  overflow-x: auto;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* --- Form --- */
+.feedback-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.feedback-form input, .feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* --- Media Query Tablet --- */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .biodata-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .galeri .card {
+    flex: 1 1 48%;
+  }
+}
+
+/* --- Media Query Desktop --- */
+@media (min-width: 1024px) {
+  .galeri .card {
+    flex: 1 1 23%;
+  }
+  .feedback-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .feedback-form input {
+    width: 48%;
+  }
+  .feedback-form textarea {
+    width: 100%;
+  }
+}
+
+✅ Ceklis Akhir
+Fitur	Sudah Ada
+Struktur folder benar	✅
+CSS eksternal di semua halaman	✅
+Menu navigasi Flexbox + hover	✅
+Galeri Flexbox responsif	✅
+Biodata responsif (stack → 2 kolom)	✅
+Tabel rowspan/colspan + scroll mobile	✅
+Form lengkap & validasi HTML dasar	✅
+
+
+<!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+
+
+
+
+
+<!-- p -->
+<!-- p -->
+<!-- p -->
+<!-- pp -->
+<!-- p -->
+<!--p  -->
+
+/* ====== GLOBAL / DASAR (Mobile-first) ====== */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(52, 49, 49);
+  margin: 0;
+   background-color: #333;
+   color: #ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container h1 {
+  text-align: center;
+  color: #1a1a7a;
+  margin-bottom: 10px;
+  margin-top: 5;
+}
+
+.container p {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.feedback-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="number"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.feedback-form textarea {
+  resize:horizontal;
+  min-height: 80px;
+}
+header {
+  background: #008cff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background: #005fa3;
+}
+
+nav a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  flex: 1 1 50%; /* Mobile: 2 menu per baris */
+  text-align: center;
+}
+
+nav a:hover {
+  background: #003d6f;
+}
+
+/* Container umum */
+.container {
+  padding: 20px;
+}
+
+/* ====== BIODATA ====== */
+.biodata {
+  display: flex;
+  flex-direction: column; /* Mobile: stack */
+  gap: 20px;
+}
+
+.biodata img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ====== GALERI (FLEXBOX) ====== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery .item {
+  flex: 1 1 100%; /* Mobile 1 kolom */
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ====== TABEL ====== */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th {
+  background: #eee;
+}
+
+/* ====== FORM ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+/* ========================== */
+/*        MEDIA QUERY TABLET  */
+/* ========================== */
+@media (min-width: 600px) and (max-width: 1023px) {
+
+  nav a {
+    flex: 1 1 auto;
+  }
+
+  .gallery .item {
+    flex: 1 1 45%; /* 2 kolom */
+  }
+
+  .biodata {
+    flex-direction: row;
+  }
+
+  .biodata img {
+    width: 40%;
+  }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  form .field {
+    flex: 1 1 45%;
+  }
+
+  textarea {
+    flex-basis: 100%;
+  }
+}
+
+/* ========================== */
+/*        DESKTOP             */
+/* ========================== */
+@media (min-width: 1024px) {
+
+  nav a {
+    flex: 1;
+  }
+
+  .gallery .item {
+    flex: 1 1 22%; /* 4 kolom */
+  }
+
+  .biodata img {
+    width: 30%;
+  }
+
+  form .field {
+    flex: 1 1 45%;
+  }
+}
